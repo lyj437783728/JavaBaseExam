@@ -24,7 +24,10 @@ public class Day {
 		for(int i = 0;i<month-1;i++){
 			days+=dayc[i];
 		}
+		
 		days+=a+day;
+		if(a == 1 && month <= 2)
+			days-=1;
 		System.out.println("你输入的日期为当年的第"+days+"天");
 		
 	}
